@@ -1,0 +1,80 @@
+\documentclass[12pt]{article}
+\usepackage{enumitem}
+% \usepackage{a4wide}
+
+\title{Demonstration of enumitem Package}
+\author{Nicholas J. Higham%
+        \thanks{%
+                School of Mathematics,
+                University of Manchester,
+                Manchester, M13 9PL, England
+                (\texttt{nick.higham@manchester.ac.uk}).
+               }
+}
+\date{November 25, 2019}
+
+%%%%%%%%%%%%%%%%%
+\begin{document}
+\thispagestyle{empty}
+\maketitle
+
+\begin{verbatim}
+\begin{itemize}
+\end{verbatim}
+\begin{itemize}
+
+\item 
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+
+\item 
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+
+\end{itemize}
+
+\begin{verbatim}
+\begin{itemize}[nosep]
+\end{verbatim}
+\begin{itemize}[nosep]
+
+\item 
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+
+\item 
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+
+\end{itemize}
+
+\begin{verbatim}
+\begin{itemize}[wide,nosep]
+\end{verbatim}
+\begin{itemize}[wide,nosep]
+
+\item 
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+
+\item 
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+
+\end{itemize}
+
+\begin{verbatim}
+\begin{enumerate}[label=X\arabic*.,ref=X\arabic*,nosep]
+\end{verbatim}
+\begin{enumerate}[label=X\arabic*.,ref=X\arabic*,nosep]
+\item\label{X1}
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+\item\label{X2}
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+\end{enumerate}
+
+See items \ref{X1} and \ref{X2}.
+
+\end{document}
